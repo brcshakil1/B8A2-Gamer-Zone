@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .container {
@@ -49,4 +50,97 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header styles */
+/* navbar styles */
+.nav {
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    padding: 38px 0;
+}
+
+.logo-container {
+    gap: 20px;
+}
+
+.logo-container h2 {
+    color: #0B0223;
+    font-size: 2.8rem;
+}
+
+.logo-container h2 .g-clr{
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links-container {
+    gap: 2rem;
+}
+
+.links-container a {
+    color: #3C354F;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.youtube-icon, .tiktok-icon {
+    font-size: 33px;
+}
+
+.links-container li >.follow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1.12rem 1.5rem;
+    border: 0;
+
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+
+
+/* Responsive styles */
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .links-container {
+        flex-direction: column;
+    }
+    .nav-container {
+        gap: 60px;
+    }
+    .links-container {
+        gap: 36px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:960px) {
+    .nav-container,
+    .links-container {
+        flex-direction: column;
+    }
+    .nav-container {
+        gap: 60px;
+    }
+    .links-container {
+        gap: 36px;
+    }
 }
