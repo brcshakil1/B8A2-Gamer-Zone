@@ -11,7 +11,8 @@
 }
 
 .clr-primary {
-    background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -115,6 +116,29 @@ a {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
 }
+/* navbar end */
+
+/* banner styles start */
+.banner-content-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.goat-text {
+    font-size: 95px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.banner-content-items li{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+/* banner styles end */
 
 
 
